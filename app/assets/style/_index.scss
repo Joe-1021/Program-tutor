@@ -1,0 +1,274 @@
+
+.header{
+  padding: 79px 78px 66px 75px;
+  padding-inline: 0;
+  max-width: 100%;
+
+  .banner{ 
+    background-image: url(../images/bg_home.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include media-breakpoint-down(md){   
+      background-image: url(../images/bg_home_mobile.jpg);
+      width: 100%;
+      height: 336px;
+    }
+  .border-square {
+    padding: 51px 0;
+    border: 1px solid #fff;
+    background: #1C1C1C;
+
+    .square {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+   }
+    h1{
+    font-size: 48px;
+    line-height: 70px;
+    color:white;
+    margin-bottom: 24px;
+    @include media-breakpoint-down(xl){   
+      font-size: 30px;
+      line-height: 45px;
+    }
+    @include media-breakpoint-down(lg){   
+      font-size: 24px;
+      line-height: 35px;
+      
+    }
+    }
+    p{
+      font-size: 18px;
+      line-height: 26px;
+      color:white;
+      @include media-breakpoint-down(xl){   
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include media-breakpoint-down(lg){   
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }   
+  }
+}
+
+}
+
+
+.text-linear-gradient{
+  background:linear-gradient(to top,#62DB54,#09ACF5);
+  color:transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.btn-linear-gradient{
+  background:linear-gradient(to left,#62DB54,#09ACF5);
+}
+
+.green-line{
+  width: 50px;
+  background:#62DB54;
+  height:3px;
+}
+
+
+.assist{
+  .card{
+  opacity: 0.9;
+  background:#2D2D2D;
+  &:hover{
+    border: 1px solid #62DB54;
+    border-radius: 12px;
+    background:#202020 ;
+    i{
+      background:linear-gradient(to bottom,#62DB54,#09ACF5);
+      color:transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+}
+}
+
+.class-flow{
+  .card{
+    border-radius: 12px;
+    .card-num{
+      left:40px;
+      top:0px;
+      background:#1c1c1c;
+      padding: 0 8px;
+    }
+  }
+}
+
+.program{
+  
+  button{
+    width: 100%;
+    padding: 24px 32px;
+    overflow: hidden;
+  }
+}
+
+
+
+.recommend{
+  .card{
+    border-radius: 24px;
+   
+    &:hover{
+      border: 1px solid #62DB54;
+    }
+    img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+    }
+    .class-title{
+      height: 58px;
+      line-height: 29px;
+      margin-bottom: 8px;
+      overflow-y: hidden;
+    }
+    .price{
+  border-top: 1px solid #C1C1C1;
+    } 
+  }
+  button{
+    border-radius: 8px;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
+
+.highlight{
+  &-bg{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 615px;
+    opacity: 0.3;
+    &:hover{
+      opacity: 1;
+      .highlight-icon{
+        color:#62DB54;
+      }
+      .white-line{
+        width: 70px;
+        color:#62DB54;
+      }
+    }
+    .highlight-icon{
+      font-size: 32px;
+      color:white;
+      margin-bottom: 18px;
+    }
+    .white-line{
+      width: 50px;
+      background:white;
+      height:3px;
+    }
+
+  }
+  &-img1{
+    background-image: url('../images/info01.jpg');
+  }
+  &-img2{
+    background-image: url('../images/info02.jpg');
+  }
+  &-img3{
+    background-image: url('../images/info03.jpg');
+  }
+  &-img4{
+    background-image: url('../images/info04.jpg');
+  }
+  
+}
+
+.article{
+  .squareRounded {
+    display: none;
+    width: 32px;
+    height: 32px;
+    &-topLeft {
+      border-top: 2px solid #62DB54;
+      border-left: 2px solid #62DB54;
+      border-top-left-radius: 10px;
+    }
+    &-topRight {
+      border-top: 2px solid #62DB54;
+      border-right: 2px solid #62DB54;
+      border-top-right-radius: 10px;
+    }
+    &-bottomLeft {
+      border-bottom: 2px solid #62DB54;
+      border-left: 2px solid #62DB54;
+      border-bottom-left-radius: 10px;
+    }
+    &-bottomRight {
+      border-bottom: 2px solid #62DB54;
+      border-right: 2px solid #62DB54;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .card{
+    padding: 32px;
+    background-color: #1C1C1C;
+    &:hover{
+      .squareRounded{
+        display: block;;
+      }
+    }
+  }
+}
+
+
+.feedback{
+    background-image:url('../images/bg_share.jpg') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 733px;
+  .share{
+    &-img{
+      width: 525px;
+      height: 381px;
+      border-radius: 24px;
+    }
+    .cover{
+      margin-left: -16px;
+      
+    }
+    .card{
+      border-radius: 24px 24px 24px 0;
+      .student-img{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      top:-50px;
+      right:32px;
+      }
+    }
+    
+  }
+  
+}
+
+
+
+.join-us{
+  &-border{
+    border-radius: 24px;
+  }
+  &-icon{
+    font-size: 80px;
+    margin-right: 48px;
+  }
+}
