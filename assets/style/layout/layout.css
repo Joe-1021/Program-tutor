@@ -1,0 +1,30 @@
+.logo img {
+  width: 175px;
+  height: 42px;
+}
+
+.menu a {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 31px 24px 33px 24px;
+  display: block;
+  color: white;
+}
+
+.menu a:hover {
+  color: #62DB54;
+}
+
+.menu i {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.linear-gradient {
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#62DB54), to(#09ACF5));
+  background: -o-linear-gradient(left, #62DB54, #09ACF5);
+  background: linear-gradient(to right, #62DB54, #09ACF5);
+}
+
+/*# sourceMappingURL=layout.css.map */
