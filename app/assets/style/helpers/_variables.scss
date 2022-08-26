@@ -265,6 +265,7 @@ $spacers: (
   5: $spacer * 1.5,//24px
   6: $spacer * 2,//32px
   7: $spacer * 3,//48px
+  40: $spacer * 2.5,//40px
   80:$spacer * 5,//80px
 ) !default;
 
@@ -471,6 +472,7 @@ $font-sizes: (
   7: $font-size-base*1.125,//18px
   8: $font-size-base*0.875,//14px
   9: $font-size-base*0.75,//12px
+  22:$font-size-base*1.375,//22px
   28:$font-size-base*1.75,//28px
   50:$font-size-base*3.125 //50px
 ) !default;
