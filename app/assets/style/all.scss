@@ -1,9 +1,9 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/utility";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
 @import './reset';
-@import './mixin';
 @import './layout/layout';
-@import './index';
+@import './pages/_index';

@@ -1,25 +1,56 @@
 
-.logo img{
+.logo a{
+    background-image: url('../images/logo.svg');
     width: 175px;
     height: 42px;
+    background-size: cover;
+    text-indent:101%;
+    overflow:hidden;
+    white-space: nowrap;
+    display: block;
+    @include media-breakpoint-down(md){
+        background-image: url('../images/logo2.svg');
+        width: 24px;
+        height: 24px;
+    }
 }
+.navbar{
+    i{
+        font-size: 24px;
+    }
+    .menu a{
+        font-size: 18px;
+        line-height: 26px;
+        padding:31px 24px 33px 24px;
+        display:block;
+        color:white;
+        @include media-breakpoint-down(md){
+            font-size: 14px;
+            line-height: 20px;
+            padding:10px 20px;
+        }
+        &:hover{
+        color:#62DB54; 
+        }
+        i{
+            font-size: 24px;
+            margin-right: 6px;
+            @include media-breakpoint-down(md){
+                font-size: 18px;
+            }
+        }
+    }
 
-.menu a{
-    font-size: 18px;
-    line-height: 26px;
-    padding:31px 24px 33px 24px;
-    display:block;
-    color:white;
-}
-.menu a:hover{
-    color:#62DB54;
-}
-.menu i{
-    font-size: 20px;
-    margin-right: 6px;
-}
-
+} 
 .linear-gradient{
-    height: 5px;
-    background:linear-gradient(to right,#62DB54,#09ACF5);
-}
+        height: 5px;
+        background:linear-gradient(to right,#62DB54,#09ACF5);
+    }
+    @include media-breakpoint-down(md){
+        footer{
+            p{
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
