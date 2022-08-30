@@ -65,6 +65,9 @@
 }
 .btn-linear-gradient{
   background:linear-gradient(to left,#62DB54,#09ACF5);
+  &:hover{
+    background:linear-gradient(to right,#62DB54,#09ACF5);
+  }
 }
 
 .green-line{
@@ -75,12 +78,15 @@
 
 
 .assist{
-  @include media-breakpoint-down(xl){
-    .assist-title{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+  i{
+    background:linear-gradient(to bottom,#62DB54,#09ACF5);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  @include media-breakpoint-up(md){
+    i{
+      color: #fff;
     }
   }
   .card{
@@ -114,9 +120,7 @@
     }
   .card{
     border-radius: 12px;
-    @include media-breakpoint-down(xl){
-        margin-top: 50px;
-    }
+    
     .card-num{
       left:40px;
       top:0px;
@@ -127,11 +131,18 @@
 }
 
 .program{
-  
+  h2{
+    width: 216px;
+    @include media-breakpoint-up(md){
+      width: auto;
+    }
+  }
+  .swiper-slide{
+    width: auto!important;
+  }
   button{
+    
     display: block;
-    width: 100%;
-    padding: 24px 32px;
     overflow: hidden;
     &:hover{
       color:$primary;
@@ -147,7 +158,7 @@
   .card{
     border-radius: 24px;
     @include media-breakpoint-down(xl){
-      margin-top: 16px;
+      margin-bottom: 24px;
   }
     &:hover{
       border: 1px solid #62DB54;
@@ -268,51 +279,125 @@
   }
 }
 
-
 .feedback{
-    background-image:url('../images/bg_share.jpg') ;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 733px;
-  .share{
-    &-img{
-      width: 525px;
-      height: 381px;
+  background-image: url('../images/bg_share.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .swiper {
+    width: 100%;
+    height: 429px;
+    @media (max-width:991px) {
+      height: auto;
+    }
+    &-img {
+      top: 0;
+      left: 10px;
+      width: 60%;
+      height: 90%;
       border-radius: 24px;
-    }
-    .cover{
-      margin-left: -16px;
-      
-    }
-    .card{
-      border-radius: 24px 24px 24px 0;
-      .student-img{
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-      top:-50px;
-      right:32px;
+      position: absolute;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #7C7E77;
+        border-radius: 24px;
+        left: -10px;
+        top: 10px;
+        z-index: -1;
+        @media (max-width:991px) {
+          left: -5px;
+          top: 5px;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+      @media (max-width:991px) {
+        position: relative;
+        width: calc(100% - 5px);
+        height: 213px;
+        left: 5px;
+        margin-bottom: 40px;
       }
     }
-    
-  }
+    .card {
+      width: 45%;
+      padding: 32px;
+      border-radius: 24px 24px 24px 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      h3 {
+        font-size: 18px;
+      }
+      &-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 32px;
+        bottom: 100%;
+        transform: translateY(50%);
+        @media (max-width:991px) {
+          width: 80px;
+          height: 80px;
+          right: 24px;
+          top: -30px;
+          bottom: auto;
+          transform: none;
+        }
+      }
+      @media (max-width:991px) {
+        position: relative;
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 32px;
+      }
+    }
   
-}
-@include media-breakpoint-down(md){
-  .share{
-    display: flex;
-    flex-direction: column;
-    &-img{
-      height: 213px;
+    .swiper-button-next:after, .swiper-button-prev:after {
+      content: '';
     }
-    .cover{
-      width: 100%;
-      margin-top: 45px;
+    &-button-next, &-button-prev {
+      position:unset;
+      width: 24px;
+      height: 24px;
+      margin-top: 0;
+      color: #62DB54;
+    }
+  
+    .swiper-pagination {
+      position: unset;
+      width: auto;
+      .swiper-pagination-bullet {
+        background-color: #62DB54;
+        opacity: initial;
+        &-active {
+          width: 16px;
+          border-radius: 100px;
+        }
+      }
+    }
+  
+    &-buttons {
+      bottom: 0;
+      left: 30%;
+      transform: translateX(-50%);
+      z-index: 10;
+      position: absolute;
+      @media (max-width: 991px) {
+        position: initial;
+        transform: none;
+      }
     }
   }
 }
-
 
 .join-us{
   &-border{

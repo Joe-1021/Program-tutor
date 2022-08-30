@@ -1,0 +1,28 @@
+.course-bar{
+    .swiper-slide{
+        width: auto!important;
+        button{
+        padding: 16px 32px;
+        display: block;
+        &:hover{
+          color:$primary;
+          background-color: #2D2D2D;
+        }
+      }
+    }
+    
+}
+
+.all-course{
+  .card{
+    border-radius: 24px;
+  &-header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  &-body{
+    padding:24px;
+  }
+  }
+}
