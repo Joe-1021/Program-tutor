@@ -14310,7 +14310,6 @@ body {
 }
 
 img {
-  max-width: 100%;
   height: auto;
   vertical-align: middle;
   -o-object-fit: cover;
@@ -14930,6 +14929,20 @@ a {
 .course-bar .swiper-slide button:hover {
   color: #62DB54;
   background-color: #2D2D2D;
+}
+
+.all-course .card {
+  border-radius: 24px;
+}
+
+.all-course .card-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.all-course .card-body {
+  padding: 24px;
 }
 
 /*# sourceMappingURL=all.css.map */
