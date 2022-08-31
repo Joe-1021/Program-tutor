@@ -1,0 +1,41 @@
+
+.card{
+    &-header{
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 8px;
+        }
+    }
+    .dot{
+        position: relative;
+        &::after{
+            content:'';
+            position:absolute;
+            width: 5px;
+            height: 5px;
+            background:$primary;
+            left:0;
+            top:30%;
+        }
+    }
+}
+.white-block{
+    width: 10px;
+    height: 10px;
+    background: white;
+}
+.list-group-item{
+    background: #2D2D2D;
+    color:white;
+    border-color: white;
+    &:hover{
+        color:$primary;
+    }  
+}
+.course-card{
+    &:hover{
+        border: 1px solid $primary;
+    }
+}
