@@ -60,7 +60,6 @@
 
 .modal-footer{
     .login-methed{
-        content:'';
         position:relative;
         width:100%;
         border:1px solid #C1C1C1;
@@ -69,6 +68,9 @@
         background:#2D2D2D;
         position: absolute;
         top:68%;
+        @include media-breakpoint-up(md){
+            top:65%
+        }
      }
      .login-img{
     width: 24px;
