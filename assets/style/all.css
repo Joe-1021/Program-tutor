@@ -14259,6 +14259,12 @@ a {
   text-decoration: none;
 }
 
+ol,
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
 .logo a {
   background-image: url("../images/logo.svg");
   width: 175px;
